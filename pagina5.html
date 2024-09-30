@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas Normales</title>
+    <link rel="icon" href="imagenes/logo.ico">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[url('/fondo2.jpg')] bg-cover bg-center">
+    <div>
+        <figure class="flex items-center justify-center rounded-2xl">
+            <img src="imagenes/imagen6.jpg" alt="Card Preview" class="rounded-t-2xl">
+        </figure>
+        <div class="mx-auto p-6 border-2 border-black w-[1200px] left-auto rounded-md bg-red-100">
+            <div class="text-2xl font-bold   text-[#374151] pb-6">Formas normales</div>
+            <div class=" text-lg   text-[#5d697c]">las formas normales son reglas que establecen la organización de los datos dentro de una base de datos relacional. Su objetivo principal es reducir la redundancia y mejorar la integridad de los datos, evitando problemas como la inconsistencia y la duplicidad de información.</div>
+        </div>
+    </div></div>
+    <br><br>
+    <div></div>
+        <div class="mx-auto p-6 border-2 border-black w-[1200px] left-auto rounded-md bg-red-100">
+            <div class="text-2xl font-bold   text-[#374151] pb-6">La primera forma normal 1NF</div>
+            <div class=" text-lg   text-[#5d697c]">Para una tabla ser la primera forma normal, debe cumplir el siguiente criterio: <br> 
+                <ul>
+                    <li >1. una sola celda no debe contener más de un valor (atomicidad)</li>
+                    <li >2. debe haber una clave primaria para identificación</li>
+                    <li >3. no filas o columnas duplicadas</li>
+                    <li >4. cada columna debe tener solamente un valor por cada fila en la tabla</li>
+                </ul>                
+             </div>
+        </div>
+    </div></div>
+    <br><br>
+    <div></div>
+    <div class="mx-auto p-6 border-2 border-black w-[1200px] left-auto rounded-md bg-red-100">
+        <div class="text-2xl font-bold   text-[#374151] pb-6">La segunda forma normal  2NF</div>
+        <div class=" text-lg   text-[#5d697c]">El 1NF solamente elimina los grupos repetitivos, no la redundancia. Por eso hay 2NF. <br> Una tabla se dice que está en 2NF si cumple el siguiente criterio: <br>
+            <ul>
+                <li >1. ya está en 1NF</li>
+                <li >2. no tiene dependencia parcial. Es decir, todos los atributos no claves son totalmente dependientes de la clave primaria</li>
+            </ul>                
+         </div>
+    </div>
+</div></div>
+<br><br>
+<div></div>
+<div class="mx-auto p-6 border-2 border-black w-[1200px] left-auto rounded-md bg-red-100">
+    <div class="text-2xl font-bold   text-[#374151] pb-6">La tercera forma normal 3NF</div>
+    <div class=" text-lg   text-[#5d697c]">Cuando una tabla está en 2NF, elimina los grupos repetitivos y la redundancia, pero no elimina la dependencia parcial transitiva. <br>Esto significa que un atributo no principal (un atributo que no forma parte de la clave del candidato) es dependiente de otro atributo no principal.  <br> Esto es lo que la tercera forma normal 3NF elimina. <br><br> Así que, para que una tabla esté en 3NF, debe: <br>
+        <ul>
+            <li >1. estar en 2NF</li>
+            <li >2. no tiene dependencia parcial transitiva</li>
+        </ul>                
+     </div>
+      <div class="flex justify-end pt-6"> 
+                <a href="index.html"><button class="bg-[#7e22ce] text-[#ffffff]  font-bold text-base  p-3 rounded-lg hover:bg-purple-800 active:scale-95 transition-transform transform">Volver al incio</button></a>
+            </div>
+</div>
+</div></div>
+</body>
+</html>
